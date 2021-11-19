@@ -9,10 +9,10 @@ res = get_r.json()
 print(f"hello {res['name']}")
 print(get_r.headers)
 
-# post_r = requests.post(BASE_URL, {'name':'narendra', 'pin':123, 'country':
-# 	'India'})
-# print(post_r.status_code)
-# print(post_r.text)
+post_r = requests.post(BASE_URL, {'name':'narendra', 'pin':123, 'country':
+	'India'})
+print(post_r.status_code)
+print(post_r.text)
 
 # put_r = requests.put(BASE_URL+ '20', {'name':'mukesh', 'pin':123, 'country':
 # 	'India'})
