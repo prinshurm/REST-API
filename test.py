@@ -7,7 +7,7 @@ get_r = requests.get(BASE_URL + "2")
 print(get_r.status_code)
 res = get_r.json()
 print(f"hello {res['name']}")
-# print(get_r.headers)
+print(get_r.headers)
 
 # post_r = requests.post(BASE_URL, {'name':'narendra', 'pin':123, 'country':
 # 	'India'})
