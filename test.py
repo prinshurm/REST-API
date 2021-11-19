@@ -14,11 +14,11 @@ post_r = requests.post(BASE_URL, {'name':'narendra', 'pin':123, 'country':
 print(post_r.status_code)
 print(post_r.text)
 
-# put_r = requests.put(BASE_URL+ '20', {'name':'mukesh', 'pin':123, 'country':
-# 	'India'})
-# print(put_r.status_code)
-# print(put_r.text)
-# delete_r = requests.delete(BASE_URL+ '1')
-# print(delete_r.status_code)
-# print(delete_r.text)
+put_r = requests.put(BASE_URL+ '20', {'name':'mukesh', 'pin':123, 'country':
+	'India'})
+print(put_r.status_code)
+print(put_r.text)
+delete_r = requests.delete(BASE_URL+ '1')
+print(delete_r.status_code)
+print(delete_r.text)
 
