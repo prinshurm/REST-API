@@ -29,7 +29,7 @@ class FirstResource(Resource):
 	def get(self, id):
 		person = User.query.filter_by(id=id).first()
 		if person is None:
-			abort(404, message= "User not found.!!")
+			abort(404, message= "The User not found.!!")
 		return person
 
 	@marshal_with(resource_fields)
